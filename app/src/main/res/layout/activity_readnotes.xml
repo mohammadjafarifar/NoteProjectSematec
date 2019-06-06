@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".readnotes">
+
+    <android.support.v7.widget.LinearLayoutCompat android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <EditText
+            android:background="#e6e6e6"
+            android:id="@+id/edtEditTitleNote"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:padding="10dp"
+            android:hint="عنوان یادداشت" />
+        <EditText
+            android:background="#ccffff"
+            android:id="@+id/edtEditNoteText"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:inputType="text|textMultiLine"
+            android:gravity="top"
+            android:layout_marginTop="10dp"
+            android:hint="متن یادداشت" />
+        <android.support.v7.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/btnEditNote"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#00ff99"
+                android:layout_margin="10dp"
+                android:text="ویرایش" />
+            <Button
+                android:id="@+id/btnDeleteNote"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="پاک کردن" />
+        </android.support.v7.widget.LinearLayoutCompat>
+    </android.support.v7.widget.LinearLayoutCompat>
+
+</android.support.constraint.ConstraintLayout>
